@@ -13,6 +13,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
   "dependencies": {
     "axios": "0.19.2",
     "concurrently": "3.6.1",
@@ -29,6 +32,7 @@
     "babel-preset-react": "6.24.1",
     "css-loader": "0.28.11",
     "cypress": "3.5.0",
+    "cypress-cucumber-preprocessor": "^4.0.1",
     "html-webpack-plugin": "2.30.1",
     "style-loader": "0.19.1",
     "webpack": "3.12.0"
