@@ -17,7 +17,7 @@ describe('List items', () => {
       .should('contain', 3)
   })
 
-  it.only('Removes a todo', () => {
+  it('Removes a todo', () => {
     cy.route({
       url: '/api/todos/1',
       method: 'DELETE',
@@ -37,7 +37,5 @@ describe('List items', () => {
     cy.get('@list')
       .should('have.length', 3)
       .and('not.contain', 'Milk')
-
-
   })
 })
